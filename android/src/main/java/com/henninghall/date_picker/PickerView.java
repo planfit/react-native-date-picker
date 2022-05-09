@@ -34,6 +34,7 @@ public class PickerView extends RelativeLayout {
         if (didUpdate(VariantProp.name)) {
             this.removeAllViewsInLayout();
             inflate(getContext(), state.derived.getRootLayout(), this);
+            findViewById(R.id.container).setId(100023);
             uiManager = new UIManager(state, this);
         }
 
